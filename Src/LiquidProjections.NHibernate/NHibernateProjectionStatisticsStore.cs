@@ -5,12 +5,12 @@ using NHibernate;
 
 namespace LiquidProjections.NHibernate
 {
-    public sealed class NHibernateTrackingStore<TState> : ITrackingStore
+    public sealed class NHibernateProjectionStatisticsStore<TState> : IStoreProjectionStatistics
         where TState : class, ITrackingState, new()
     {
         private readonly Func<ISession> sessionFactory;
 
-        public NHibernateTrackingStore(Func<ISession> sessionFactory)
+        public NHibernateProjectionStatisticsStore(Func<ISession> sessionFactory)
         {
             this.sessionFactory = sessionFactory;
         }

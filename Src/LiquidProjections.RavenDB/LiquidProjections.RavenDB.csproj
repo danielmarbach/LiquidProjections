@@ -69,7 +69,7 @@
     <Compile Include="RavenProjectionContext.cs" />
     <Compile Include="RavenProjector.cs" />
     <Compile Include="RavenProjectionException.cs" />
-    <Compile Include="RavenTrackingStore.cs" />
+    <Compile Include="RavenProjectionStatisticsStore.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\LiquidProjections\LiquidProjections.csproj">

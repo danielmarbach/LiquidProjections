@@ -2,7 +2,7 @@
 
 namespace LiquidProjections
 {
-    public interface ITrackingStore
+    public interface IStoreProjectionStatistics
     {
         Task SaveCheckpoint(string projectorId, long checkpoint);
     }

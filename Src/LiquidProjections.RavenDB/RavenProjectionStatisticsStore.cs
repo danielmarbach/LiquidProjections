@@ -4,11 +4,11 @@ using Raven.Client;
 
 namespace LiquidProjections.RavenDB
 {
-    public class RavenTrackingStore : ITrackingStore
+    public class RavenProjectionStatisticsStore : IStoreProjectionStatistics
     {
         private readonly Func<IAsyncDocumentSession> sessionFactory;
 
-        public RavenTrackingStore(Func<IAsyncDocumentSession> sessionFactory)
+        public RavenProjectionStatisticsStore(Func<IAsyncDocumentSession> sessionFactory)
         {
             this.sessionFactory = sessionFactory;
         }
